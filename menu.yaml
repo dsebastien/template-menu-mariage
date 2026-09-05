@@ -1,0 +1,70 @@
+# ============================================================================
+#  MENU DE MARIAGE — le seul fichier à modifier
+#
+#  Remplacez les textes ci-dessous, puis lancez : ./construire.sh
+#  Le résultat contient une carte de 12 × 18 cm et une planche A4 de 2 cartes.
+# ============================================================================
+
+# Valeurs facultatives réutilisables avec {nom_du_champ} dans tous les textes.
+# Décommentez « sous_titre » plus bas pour afficher les mariés et la date.
+informations:
+  prenoms: Aurelia & Marcus
+  date: 1er janvier 2030
+
+menu:
+  titre: Menu
+  # sous_titre: "{prenoms} · {date}"
+
+  plats:
+    - titre: L'entrée
+      nom: "Quand le Cochon rencontre le Volatile :"
+      description: >
+        Le Foie Gras attrapé en pleine séance de bronzage intensif avec
+        Mademoiselle Caille bien pimentée, surpris sur un lit de brioche
+        moelleuse sous les cocotiers d'un ananas vanillé.
+
+    - titre: La pause glacée
+      description: Sorbet citron givré
+      note: Intermède glacé pour vous donner l'illusion d'être raisonnable
+
+    - titre: Le plat
+      nom: "Le Cochon qui voulait être Roi :"
+      description: >
+        Monsieur Porc parti bronzer à la poêle, escorté par une patate Macaire
+        noyée dans le Chimay fondant et sa p'tite sauce secrète garantie
+        0% diététique, 100% plaisir.
+
+    - titre: Les fromages
+      description: >
+        Une symphonie de bactéries élevées en plein air avec beaucoup d'amour.
+
+    - titre: Le dessert
+      description: >
+        Ultime coup de grâce du Chef : Café serré et ses tentations hautement
+        caloriques.
+
+  conclusion:
+    message: Merci d'être à nos côtés !
+    note: >
+      En cas de coma digestif, desserrez la ceinture d'un cran et gardez le
+      sourire.
+
+reglages:
+  page:
+    largeur_mm: 120
+    hauteur_mm: 180
+
+  cadre:
+    retrait_mm: 9
+    epaisseur_pt: 2
+
+  polices:
+    dossier: polices
+    texte: EB Garamond
+    titres: Cormorant Garamond
+    taille_pt: 9
+
+  couleurs:
+    encre: "#4b413a"
+    accent: "#A24F3D"       # terracotta
+    decoration: "#A24F3D"   # cadre et petits motifs
