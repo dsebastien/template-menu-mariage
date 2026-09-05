@@ -8,6 +8,13 @@ pip install -r requirements.txt
 ./construire.sh
 ```
 
+Sous Windows, dans PowerShell :
+
+```powershell
+pip install -r requirements.txt
+.\construire.ps1
+```
+
 La construction produit deux PDF :
 
 | Fichier | Usage |
@@ -39,7 +46,8 @@ la personnalisation et l'impression.
 
 ```text
 menu.yaml             votre contenu et vos réglages
-construire.sh         crée les deux PDF
+construire.sh         crée les deux PDF (Linux, macOS)
+construire.ps1        crée les deux PDF (Windows, PowerShell)
 exemple/              les PDF d'exemple
 docs/                 le guide et les aperçus
 moteur/               le moteur de composition

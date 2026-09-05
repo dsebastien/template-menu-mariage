@@ -15,12 +15,33 @@ automatiquement. Si nécessaire, indiquez son chemin :
 CHROME=/chemin/vers/chrome ./construire.sh
 ```
 
+Sous Windows, utilisez PowerShell et le script `construire.ps1`. Il trouve
+Chrome, Chromium ou, à défaut, Microsoft Edge. Pour imposer un navigateur :
+
+```powershell
+$env:CHROME = "C:\chemin\vers\chrome.exe"
+.\construire.ps1
+```
+
+Si PowerShell refuse de lancer le script, autorisez les scripts locaux une
+fois pour toutes :
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+```
+
 ## Créer les PDF
 
 À la racine du projet, lancez :
 
 ```bash
 ./construire.sh
+```
+
+ou, sous Windows :
+
+```powershell
+.\construire.ps1
 ```
 
 Vous obtenez :
@@ -32,6 +53,10 @@ Pour écrire les fichiers dans un autre dossier :
 
 ```bash
 ./construire.sh exemple
+```
+
+```powershell
+.\construire.ps1 exemple
 ```
 
 Modifiez ensuite uniquement `menu.yaml`. Le dossier `build/` contient des

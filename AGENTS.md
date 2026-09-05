@@ -24,8 +24,11 @@ pip install -r requirements.txt
 ./regenerer-exemple.sh
 ```
 
-Chrome ou Chromium sert au rendu. `CHROME=/chemin ./construire.sh` permet de
-préciser l'exécutable.
+Sous Windows, `construire.ps1` et `regenerer-exemple.ps1` sont les
+équivalents PowerShell ; les deux jeux de scripts doivent rester alignés.
+
+Chrome ou Chromium sert au rendu. `CHROME=/chemin ./construire.sh` (ou
+`$env:CHROME` sous Windows) permet de préciser l'exécutable.
 
 ## Chaîne
 
@@ -53,7 +56,8 @@ menu.yaml → moteur/contenu.py → moteur/composer.py → build/menu.html
 - Champs YAML en français.
 - Exceptions `ErreurContenu` formulées pour l'utilisateur final.
 - Conserver les polices statiques ; les polices variables produisent souvent du Type3.
-- Après une modification visuelle, exécuter `./regenerer-exemple.sh`.
+- Après une modification visuelle, exécuter `./regenerer-exemple.sh`
+  (ou `.\regenerer-exemple.ps1` sous Windows).
 
 Le contenu de `menu.yaml` est un exemple humoristique. Il peut être remplacé,
 mais ne doit contenir aucune donnée personnelle réelle.
