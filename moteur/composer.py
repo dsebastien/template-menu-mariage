@@ -99,7 +99,7 @@ body{{
 }}
 .menu{{
   position:relative; width:{largeur}mm; height:{hauteur}mm;
-  padding:13mm 13.5mm 12mm; display:flex; flex-direction:column;
+  padding:11.5mm 13.5mm 11mm; display:flex; flex-direction:column;
   align-items:center; text-align:center;
 }}
 .cadre{{
@@ -108,13 +108,13 @@ body{{
 }}
 .entete{{ flex:none; width:100%; }}
 .motif{{
-  width:24mm; height:3mm; margin:0 auto 4.2mm; display:flex;
+  width:24mm; height:3mm; margin:0 auto 3.2mm; display:flex;
   align-items:center; justify-content:center; gap:2.1mm; color:var(--decoration);
 }}
 .motif .trait{{ width:7mm; border-top:.65pt solid currentColor; }}
 .motif .point{{ width:1.15mm; height:1.15mm; border-radius:50%;
                background:currentColor; }}
-.motif-bas{{ width:7mm; margin:4.2mm auto 0; transform:rotate(45deg); }}
+.motif-bas{{ width:7mm; margin:3mm auto 0; transform:rotate(45deg); }}
 .motif-bas .trait{{ display:none; }}
 .motif-bas .point{{ width:3.2mm; height:3.2mm; border-radius:0;
                    background:transparent; border:.7pt solid currentColor;
@@ -132,7 +132,7 @@ h1{{
   letter-spacing:.08em;
 }}
 .losange{{
-  width:3.3mm; height:3.3mm; margin:4.8mm auto 0; position:relative;
+  width:3.3mm; height:3.3mm; margin:3.8mm auto 0; position:relative;
   transform:rotate(45deg); background:var(--decoration);
 }}
 .losange::before,.losange::after{{ content:""; position:absolute; background:white; }}
@@ -140,24 +140,24 @@ h1{{
 .losange::after{{ top:1.35mm; left:0; height:.55mm; width:100%; }}
 .plats{{
   width:100%; flex:1; display:flex; flex-direction:column;
-  justify-content:center; gap:4.1mm; padding:4.5mm 0 3mm;
+  justify-content:center; gap:3.5mm; padding:2.5mm 0 1.5mm;
 }}
 .plat{{ break-inside:avoid; }}
 .plat h2{{
-  color:var(--accent); font-size:10.2pt; line-height:1.15; font-weight:600;
-  letter-spacing:.15em; text-indent:.15em; margin:0 0 1.6mm;
+  color:var(--accent); font-size:11.5pt; line-height:1.15; font-weight:600;
+  letter-spacing:.15em; text-indent:.15em; margin:0 0 1.4mm;
 }}
-.plat p{{ margin:0; line-height:1.3; text-wrap:balance; }}
+.plat p{{ margin:0; line-height:1.26; text-wrap:balance; }}
 .nom{{
   font-family:var(--titres); font-weight:400; font-style:italic;
-  font-size:9.6pt;
+  font-size:10.8pt;
 }}
-.description{{ font-size:8.9pt; }}
-.note{{ font-size:8.5pt; margin-top:1mm !important; }}
+.description{{ font-size:10.2pt; }}
+.note{{ font-size:9.2pt; margin-top:1mm !important; }}
 .conclusion{{ flex:none; width:100%; min-height:15mm; }}
 .conclusion p{{ margin:0; line-height:1.3; text-wrap:balance; }}
-.conclusion .message{{ font-size:9pt; margin-top:3.5mm; }}
-.conclusion .note{{ font-size:8.5pt; margin-top:1.2mm !important; }}
+.conclusion .message{{ font-size:10pt; margin-top:2.5mm; }}
+.conclusion .note{{ font-size:9.2pt; margin-top:1.2mm !important; }}
 """
 
 
